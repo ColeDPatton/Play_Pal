@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#5A5A5A">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="875dp">
+
+        <Button
+            android:id="@+id/bIMAGEADD2"
+            android:layout_width="125dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/buttonshape"
+            android:text="@string/choose_image"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/etFNAME"
+            android:layout_width="347dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivEditPic" />
+
+        <EditText
+            android:id="@+id/etEMAIL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:hint="@string/email_hint"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etFNAME" />
+
+        <EditText
+            android:id="@+id/etDOB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:hint="@string/date"
+            android:inputType="date"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etEMAIL" />
+
+        <EditText
+            android:id="@+id/etGAMERTAG"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:hint="@string/title_gamertag"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etDOB" />
+
+        <EditText
+            android:id="@+id/etPASSWORD"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etGAMERTAG" />
+
+        <EditText
+            android:id="@+id/etPASSWORD2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:hint="@string/confirmPassword"
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etPASSWORD" />
+
+        <Button
+            android:id="@+id/bCREATEACC"
+            android:layout_width="185dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/buttonshape"
+            android:onClick="goToProfile"
+            android:text="@string/title_save"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sRocketLeagueSkill" />
+
+        <Spinner
+            android:id="@+id/sCONSOLE"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:backgroundTint="#FFFFFF"
+            android:popupBackground="#6a6a6a"
+            android:spinnerMode="dropdown"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sGENDER" />
+
+        <Spinner
+            android:id="@+id/sGENDER"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:backgroundTint="#FFFFFF"
+            android:popupBackground="#6a6a6a"
+            android:spinnerMode="dropdown"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etPASSWORD2" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:text="Edit Profile"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <ImageButton
+            android:id="@+id/btBack"
+            android:layout_width="75dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="21dp"
+            android:background="@drawable/buttonshape"
+            app:layout_constraintBottom_toTopOf="@+id/ivEditPic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_24px" />
+
+        <ImageView
+            android:id="@+id/ivFortnite"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/fornitedefault"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vSpacer" />
+
+        <Spinner
+            android:id="@+id/sFortniteSkill"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="50dp"
+            android:backgroundTint="#FFFFFF"
+            android:popupBackground="#6a6a6a"
+            android:spinnerMode="dropdown"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/ivFortnite"
+            app:layout_constraintTop_toBottomOf="@+id/tvFornite" />
+
+        <TextView
+            android:id="@+id/tvFornite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:text="Fortnite"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivFortnite"
+            app:layout_constraintTop_toBottomOf="@+id/vSpacer"
+            app:layout_constraintTop_toTopOf="@+id/ivFortnite" />
+
+        <TextView
+            android:id="@+id/tvSelectSkill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:text="Change Your Skill Level For The Following Games"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/sCONSOLE" />
+
+        <View
+            android:id="@+id/vSpacer"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSelectSkill" />
+
+        <ImageView
+            android:id="@+id/ivMinecraft"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/minecraftdefault"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivFortnite" />
+
+        <Spinner
+            android:id="@+id/sMinecraftSkill"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="50dp"
+            android:backgroundTint="#FFFFFF"
+            android:popupBackground="#6a6a6a"
+            android:spinnerMode="dropdown"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/ivFortnite"
+            app:layout_constraintTop_toBottomOf="@+id/tvMinecraft" />
+
+        <TextView
+            android:id="@+id/tvMinecraft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:text="Minecraft"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivFortnite"
+            app:layout_constraintTop_toBottomOf="@+id/sFortniteSkill"
+            app:layout_constraintTop_toTopOf="@+id/ivMinecraft" />
+
+        <ImageView
+            android:id="@+id/ivGta5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/gta5default"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivMinecraft" />
+
+        <Spinner
+            android:id="@+id/sGta5Skill"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="50dp"
+            android:backgroundTint="#FFFFFF"
+            android:popupBackground="#6a6a6a"
+            android:spinnerMode="dropdown"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/ivFortnite"
+            app:layout_constraintTop_toBottomOf="@+id/tvGta5" />
+
+        <TextView
+            android:id="@+id/tvGta5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:text="Grand Theft Auto V"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivFortnite"
+            app:layout_constraintTop_toBottomOf="@+id/sMinecraftSkill"
+            app:layout_constraintTop_toTopOf="@+id/ivGta5" />
+
+        <ImageView
+            android:id="@+id/ivLeagueOfLegends"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/leagueoflegendsdefault"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivGta5" />
+
+        <Spinner
+            android:id="@+id/sLeagueOfLegendsSkill"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="50dp"
+            android:backgroundTint="#FFFFFF"
+            android:popupBackground="#6a6a6a"
+            android:spinnerMode="dropdown"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/ivFortnite"
+            app:layout_constraintTop_toBottomOf="@+id/tvLeagueOfLegends" />
+
+        <TextView
+            android:id="@+id/tvLeagueOfLegends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:text="League of Legends"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivFortnite"
+            app:layout_constraintTop_toBottomOf="@+id/sGta5Skill"
+            app:layout_constraintTop_toTopOf="@+id/ivLeagueOfLegends" />
+
+        <ImageView
+            android:id="@+id/ivRainbowSixSiege"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/rainbowsixdefault"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivLeagueOfLegends" />
+
+        <Spinner
+            android:id="@+id/sRainbowSixSiegeSkill"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="50dp"
+            android:backgroundTint="#FFFFFF"
+            android:popupBackground="#6a6a6a"
+            android:spinnerMode="dropdown"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/ivFortnite"
+            app:layout_constraintTop_toBottomOf="@+id/tvRainbowSixSiege" />
+
+        <TextView
+            android:id="@+id/tvRainbowSixSiege"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:text="Rainbow Six Siege"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivFortnite"
+            app:layout_constraintTop_toBottomOf="@+id/sLeagueOfLegendsSkill"
+            app:layout_constraintTop_toTopOf="@+id/ivRainbowSixSiege" />
+
+        <ImageView
+            android:id="@+id/ivOverwatch"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/overwatchdefault"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivRainbowSixSiege" />
+
+        <Spinner
+            android:id="@+id/sOverwatchSkill"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="50dp"
+            android:backgroundTint="#FFFFFF"
+            android:popupBackground="#6a6a6a"
+            android:spinnerMode="dropdown"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/ivFortnite"
+            app:layout_constraintTop_toBottomOf="@+id/tvOverwatch" />
+
+        <TextView
+            android:id="@+id/tvOverwatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:text="Overwatch"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivFortnite"
+            app:layout_constraintTop_toBottomOf="@+id/sRainbowSixSiegeSkill"
+            app:layout_constraintTop_toTopOf="@+id/ivOverwatch" />
+
+        <ImageView
+            android:id="@+id/ivPubg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/pubgdeafult"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivOverwatch" />
+
+        <Spinner
+            android:id="@+id/sPubgSkill"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="50dp"
+            android:backgroundTint="#FFFFFF"
+            android:popupBackground="#6a6a6a"
+            android:spinnerMode="dropdown"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/ivFortnite"
+            app:layout_constraintTop_toBottomOf="@+id/tvPubg" />
+
+        <TextView
+            android:id="@+id/tvPubg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:text="Player Unknown \nBattlegrounds"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivFortnite"
+            app:layout_constraintTop_toBottomOf="@+id/sOverwatchSkill"
+            app:layout_constraintTop_toTopOf="@+id/ivPubg" />
+
+        <ImageView
+            android:id="@+id/ivRocketLeague"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/rocketleaguedefault"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivPubg" />
+
+        <Spinner
+            android:id="@+id/sRocketLeagueSkill"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="50dp"
+            android:backgroundTint="#FFFFFF"
+            android:popupBackground="#6a6a6a"
+            android:spinnerMode="dropdown"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/ivFortnite"
+            app:layout_constraintTop_toBottomOf="@+id/tvRocketLeague" />
+
+        <TextView
+            android:id="@+id/tvRocketLeague"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:text="Rocket League"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivFortnite"
+            app:layout_constraintTop_toBottomOf="@+id/sPubgSkill"
+            app:layout_constraintTop_toTopOf="@+id/ivRocketLeague" />
+
+        <ImageView
+            android:id="@+id/ivEditPic"
+            android:layout_width="151dp"
+            android:layout_height="139dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginBottom="23dp"
+            app:layout_constraintBottom_toTopOf="@+id/etFNAME"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btBack"
+            app:srcCompat="@drawable/controller" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

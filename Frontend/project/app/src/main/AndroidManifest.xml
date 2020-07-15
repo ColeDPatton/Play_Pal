@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.p19">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/controller"
+        android:label="PlayPal"
+        android:roundIcon="@drawable/controller"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".OtherUserProfileActivity"></activity>
+        <activity android:name=".AdminActivity" />
+        <activity android:name=".UpgradeUserActivity" />
+        <activity android:name=".PremiumSettingsActivity" />
+        <activity android:name=".BufferActivity" />
+        <activity
+            android:name=".LoadingActivity"
+            android:label="@string/title_playpal"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EditProfileActivity"
+            android:parentActivityName=".UserProfileActivity" />
+        <activity
+            android:name=".CreateAccountActivity"
+            android:label="@string/create_account" />
+        <activity
+            android:name=".ReportUserActivity"
+            android:label="@string/report" />
+        <activity
+            android:name=".MessagingActivity"
+            android:label="Messages" />
+        <activity
+            android:name=".MatchedUsersActivity"
+            android:label="@string/matched_users" />
+        <activity
+            android:name=".SwipeActivity"
+            android:label="@string/swipe_users" />
+        <activity
+            android:name=".StandardSettingsActivity"
+            android:label="@string/settings" />
+        <activity
+            android:name=".UserProfileActivity"
+            android:label="@string/profile" />
+        <activity android:name=".CreateAccountActivity2" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/log_in" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
